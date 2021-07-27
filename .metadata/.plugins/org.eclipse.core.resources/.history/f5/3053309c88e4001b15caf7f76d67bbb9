@@ -1,0 +1,27 @@
+package com.lti.lambda;
+
+
+interface AddCal{
+	void sum(int i,int y);
+}
+class AddCalcImpl implements AddCal{
+
+	public void sum(int i, int y) {
+		System.out.println("Sum= "+ (i+y));
+		
+	}
+	
+}
+
+public class LambdaDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AddCalcImpl add1= new AddCalcImpl();
+		add1.sum(10, 20);
+	}
+
+}

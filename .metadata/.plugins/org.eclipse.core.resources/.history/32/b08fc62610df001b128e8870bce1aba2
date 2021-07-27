@@ -1,0 +1,16 @@
+package com.lti.main;
+import java.time.LocalDate;
+import com.lti.model.Student;
+public class App {
+
+	
+	public static void main(String[] args) {
+		String[] student1phoneNumber={"123456"};
+		Student student = new Student();
+		Student student1= new Student(101,"john",LocalDate.now(),student1phoneNumber);
+        
+		Info info = new Info();
+		info.display(student1);
+	}
+
+}

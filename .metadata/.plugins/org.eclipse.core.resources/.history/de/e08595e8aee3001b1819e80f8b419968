@@ -1,0 +1,49 @@
+package com.lti.dao;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import com.lti.model.Student;
+
+public class CollectionDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+//		List<Student> students= new ArrayList<Student>();
+//		
+//		students.add(new Student(1,"mike",LocalDate.of(2000,04,12)));
+//		students.add(new Student(1,"john",LocalDate.of(2001,03,12)));
+//		students.add(new Student(1,"cena",LocalDate.of(2002,05,16)));
+//		students.add(new Student(1,"randy",LocalDate.of(2003,07,14)));
+//		students.add(new Student(1,"orton",LocalDate.of(2004,04,12)));
+//		
+//
+//		Student st= (new Student(1,"orton",LocalDate.of(2004,04,12)));
+//		System.out.println(students.indexOf(st));
+//		
+//		List<Integer> nums= new ArrayList<Integer>();
+//		nums.add(60);
+//		nums.add(50);
+//		nums.add(40);
+//		nums.add(30);
+//		nums.add(20);
+//		
+//		System.out.println(nums.indexOf(60));
+
+		Set<String>  names=new HashSet()<String>();
+		names.add(new String("yash"));
+		names.add(new String("prashant"));
+		names.add(new String("utsav"));
+		names.add(new String("naro"));
+		System.out.println(names);
+		
+		
+		
+		
+	}
+}

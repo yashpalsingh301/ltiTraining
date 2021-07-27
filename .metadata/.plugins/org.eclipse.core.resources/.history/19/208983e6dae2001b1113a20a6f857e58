@@ -1,0 +1,10 @@
+package com.lti.polymorphism;
+
+public class IciciAtm implements ATM {
+
+	public void withdraw(double amount) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.lti.model;
+
+public class Degreelevel extends Enum<E> {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

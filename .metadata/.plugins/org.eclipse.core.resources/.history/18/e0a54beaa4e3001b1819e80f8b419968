@@ -1,0 +1,51 @@
+package com.lti.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.lti.model.Student;
+
+public class InMemoryStudentDaoImpl implements Studentdao {
+
+	static List<Student> students = new ArrayList<Student>();
+	
+	public void addStudent(Student student) {
+		students.add(student);
+
+	}
+
+	public void updateStudent(Student student) {
+		Student st=findAStudent(student.getId());
+		// TODO Auto-generated method stub
+
+	}
+
+	public void removeStudent(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Student findAStudent(int id) {
+		for (Student st:students){
+			if (st.getId()==id){
+				return st;
+			   }
+			}
+		return null;
+	
+	}
+
+	public List<Student> viewAllStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

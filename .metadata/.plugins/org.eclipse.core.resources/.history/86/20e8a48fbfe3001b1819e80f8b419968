@@ -1,0 +1,17 @@
+package com.lti.dao;
+
+import java.util.List;
+
+import com.lti.model.Student;
+
+public interface Studentdao {
+ 
+	boolean addStudent(Student student);
+	void updateStudent(Student student);
+	void removeStudent(int id);
+	Student findAStudent(int id);
+	List<Student> viewAllStudents();
+	
+	
+	
+}

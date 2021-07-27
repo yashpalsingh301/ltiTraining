@@ -1,0 +1,61 @@
+package com.lti.main;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import com.lti.dao.Studentdao;
+import com.lti.model.Student;
+
+public class StudentMain {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Studentdao studentdao = new Studentdao();
+		do {
+			System.out
+					.println("1.Add a student \n2.update a student \n3.Remove a Student \n4.search a student \n5.view all student");
+			Scanner sc = new Scanner(System.in);
+			int ch = sc.nextInt();
+
+			switch (ch) {
+
+			case 1:
+				System.out
+						.println("Enter your id,name,date of birth(dd/MM/yyyy)");
+				int id = sc.nextInt();
+				String name = sc.next();
+				String date = sc.next();
+				DateTimeFormatter formatter = DateTimeFormatter
+						.ofPattern("dd/MM/yyyy");
+				LocalDate dateOfBirth = LocalDate.parse(date, formatter);
+
+				Student student = new Student(id, name, dateOfBirth);
+				boolean result = studentdao.addStudent(student);
+				if (result) {
+					System.out.println("cong");
+				} else {
+					System.out.println("sorry");
+				}
+
+				break;
+
+			case 2:
+				break;
+
+			case 3:
+				break;
+
+			case 4:
+				break;
+
+			case 5:
+				break;
+			}
+
+		} while (true);
+
+	}
+}

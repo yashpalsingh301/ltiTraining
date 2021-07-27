@@ -1,0 +1,17 @@
+package com.lti.polymorphism;
+
+public class SbiAtm implements ATM {
+	private double balance=10000;
+	private double amount;
+	public void withdraw(double amount) {
+		System.out.println(amount);
+
+	}
+
+
+	public double CheckBalance(double balance) {
+		return balance-amount;
+		
+	}
+
+}

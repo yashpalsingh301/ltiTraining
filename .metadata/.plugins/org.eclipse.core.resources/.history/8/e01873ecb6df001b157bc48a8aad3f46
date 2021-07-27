@@ -1,0 +1,31 @@
+package com.lti.main;
+
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+
+import com.lti.model.Student;
+
+public class Info{
+
+	
+	
+		public static void display(Student student){
+			System.out.println(student.getId()+" " +student.getName()+ " " + student.getDateOfBirth()+" "+ Student.getCollege()
+					+" "+ Arrays.toString(student.getPhoneNumber()));
+		}
+		
+		public void display(Student[] students){
+			for (int i=0;i<students.length;i++)
+			{	display(students[i]); }		
+		}
+      public static void display (List<Student> students) {
+    	  Iterator<Student> studs=students.iterator();
+    	  while(studs.hasNext()){
+    		  Student st=studs.next();
+    		  display(st);    	  }
+    	  
+      }
+		}
+
+

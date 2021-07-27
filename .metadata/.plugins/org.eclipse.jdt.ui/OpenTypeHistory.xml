@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=StudentManagementSystem/C:\/Program Files\/Java\/jre1.8.0_291\/lib\/rt.jar&lt;java.lang(Enum.class[Enum" modifiers="1057" timestamp="1625317171021"/>
+<typeInfo handle="=StudentManagementSystem/src&lt;com.lti.model{Course.java[Course" modifiers="1" timestamp="1626171677845"/>
+<typeInfo handle="=StudentManagementSystem/src&lt;com.lti.polymorphism{Amazon.java[Amazon" modifiers="1025" timestamp="1626068448487"/>
+<typeInfo handle="=StudentManagementSystem/src&lt;com.lti.polymorphism{ATM.java[ATM" modifiers="513" timestamp="1626071597134"/>
+<typeInfo handle="=StudentManagementSystem/src&lt;com.lti.dao{Studentdao.java[Studentdao" modifiers="513" timestamp="1626174225184"/>
+<typeInfo handle="=StudentManagementSystem/C:\/Program Files\/Java\/jre1.8.0_291\/lib\/rt.jar&lt;com.sun.corba.se.spi.presentation.rmi(PresentationManager$StubFactory.class[StubFactory" modifiers="1545" timestamp="1625317171021"/>
+</typeInfoHistroy>

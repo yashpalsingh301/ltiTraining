@@ -1,0 +1,17 @@
+package com.lti.main;
+
+import com.lti.model.Student;
+
+public class info {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		public void display(Student student){
+			System.out.println(student.getId()+" " +student.getName()+ " " + student.getDateOfBirth()+" "+ Student.getCollege());
+		}
+
+	}
+
+}

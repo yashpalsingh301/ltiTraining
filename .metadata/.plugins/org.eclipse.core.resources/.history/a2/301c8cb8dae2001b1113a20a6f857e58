@@ -1,0 +1,5 @@
+package com.lti.polymorphism;
+
+public interface ATM {
+
+}

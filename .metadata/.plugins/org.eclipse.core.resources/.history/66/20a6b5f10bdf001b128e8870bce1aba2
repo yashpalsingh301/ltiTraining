@@ -1,0 +1,15 @@
+package com.lti.main;
+import java.time.LocalDate;
+import com.lti.model.Student;
+public class App {
+
+	
+	public static void main(String[] args) {
+		Student student = new Student();
+		Student student1= new Student(101,"john",LocalDate.now());
+        
+		nfo info = new info();
+		info.display(studen1);
+	}
+
+}

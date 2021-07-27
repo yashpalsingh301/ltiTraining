@@ -1,0 +1,39 @@
+package com.lti.lambda;
+
+import java.util.Scanner;
+
+
+interface AddCalc{
+	void sum(int i,int y);
+}
+class AddCalcImpl implements AddCalc{
+
+	public void sum(int i, int y) {
+		System.out.println("Sum= "+ (i+y));
+		
+	}
+	
+}
+
+interface Shape{
+	void area();
+}
+
+public class LambdaDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AddCalcImpl add1= new AddCalcImpl();
+		add1.sum(10, 20);
+	
+	Shape rect=()->{
+		Scanner sc= new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		
+		System.out.println("area= "+ (x*y));
+	};
+	
+	}
+}
+

@@ -1,0 +1,42 @@
+
+
+class Ekclass{
+	int x;
+	public int returnOne(){
+		return 1; 
+	}
+	
+	Ekclass(int y){
+		this.x=y;
+		System.out.println("ye lelle");
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int[] arr(){
+		int[] a={1,2,3,4,5};
+		return a;
+		
+	}
+	
+}
+
+
+public class Ch_48 {
+
+	
+	public static void main(String[] args) {
+		Ekclass kate= new Ekclass(10);
+		System.out.println(kate.getX());
+		int[] c= kate.arr();
+		System.out.println(c);
+		
+
+	}
+
+}

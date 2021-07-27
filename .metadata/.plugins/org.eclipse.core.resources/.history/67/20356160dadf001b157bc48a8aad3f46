@@ -1,0 +1,19 @@
+package com.lti.model;
+
+public class DegreeCourse extends Course {
+
+	DegreeLevel degreeLevel;
+	boolean isPlacementAvailable;
+
+	public DegreeCourse() {
+		super();
+	}
+
+	public DegreeCourse(int id, String name, int duration, int fees,
+			DegreeLevel degreeLevel, boolean isaplacementAvailable) {
+		super(id, name, duration, fees);
+		this.degreeLevel = degreeLevel;
+		this.isPlacementAvailable = isPlacementAvailable;
+	}
+	
+}

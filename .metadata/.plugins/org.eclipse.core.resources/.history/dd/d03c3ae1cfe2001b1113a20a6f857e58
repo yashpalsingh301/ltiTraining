@@ -1,0 +1,19 @@
+package com.lti.polymorphism;
+
+public class Seller1 extends Amazon {
+
+	@Override
+	void purchase(double price) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

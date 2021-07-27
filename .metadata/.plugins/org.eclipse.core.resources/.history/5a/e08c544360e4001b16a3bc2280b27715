@@ -1,0 +1,71 @@
+package com.lti.dao;
+
+import java.sql.Connection;
+import java.sql.SQLData;
+import java.util.List;
+import java.util.Map.Entry;
+import java.util.Set;
+
+import com.lti.model.Course;
+import com.lti.model.Student;
+
+public class PersistantStudentDaoImpl implements Studentdao {
+
+	Connection conn;
+	
+	public PersistantStudentDaoImpl(){
+		conn=ConnectionFactory.getConnection();
+	}
+	
+	
+	@Override
+	public boolean addStudent(Student student) {
+		sql="insert into Student values(seq_Student.nextval,?,?)";
+		return false;
+	}
+
+	@Override
+	public void updateStudent(Student student) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removeStudent(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Student findAStudent(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Student> viewAllStudents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void enroll(int studentId, int courseId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Set<Entry<Student, Course>> viewEnrollments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

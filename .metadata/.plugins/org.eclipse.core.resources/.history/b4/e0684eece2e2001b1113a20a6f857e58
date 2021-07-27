@@ -1,0 +1,32 @@
+package com.lti.exception;
+
+public class ExceptionMain {
+	
+	static int res=0;
+	static int[] arr=new int[]{1,2,3,4,5};
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("starts");
+		
+		
+		System.out.println("ends");
+		
+
+	}
+	
+	public static int divide(int i, int j){
+		int res=i/j;
+		return res;
+		
+	}
+	
+	public static int getElement(int index){
+		return arr[index];
+		
+	}
+
+}

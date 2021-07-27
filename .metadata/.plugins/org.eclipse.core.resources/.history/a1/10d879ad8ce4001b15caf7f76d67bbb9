@@ -1,0 +1,22 @@
+package com.lti.lambda;
+
+interface ISum{
+	int sum(int num1,int num2);
+}
+
+public class LambdaDemo2 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ISum iSum=(int num1,int num2)->{
+			int sum=num1+num2;
+			return sum;
+		};
+		System.out.println(iSum.sum(10, 20));
+
+	}
+
+}
