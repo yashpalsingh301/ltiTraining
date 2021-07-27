@@ -25,7 +25,7 @@ public Person(int id, String name) {
 class Info{
 	static public void main(String[] args) {
 		Person person= new Person(25,"karan"); 
-		System.out.println(person.getName());
+		System.out.println(person.getName()+" " + person.getId());
 		
 	}
 }
